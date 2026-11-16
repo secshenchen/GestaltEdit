@@ -34,7 +34,9 @@ Edit `com.apple.MobileGestalt.plist` on-device. Capability presets, a full field
 
 ## Features
 
-**Presets** — Dynamic Island, device model name, boot chime, charge limit, tap to wake, Camera Control, Apple Pencil, Action Button, Collision SOS, Always-On Display, wallpaper parallax, Stage Manager, iPad app compatibility, Siri AI US region, and more. Tick what you want, tap Apply.
+**Presets** — Organized by purpose: Siri AI, Dynamic Island, display, iPad features and everyday device features. iPadOS Mode includes multitasking, Stage Manager and iPad app support in one selection. Liquid Glass uses a single effects selector. Extended presets include HDR photos, AOD widgets/brightness, Audio Mix, FaceTime spatial audio, seven device regions. Options are filtered by system version. Siri AI retains supported device regions and adjusts known restricted device regions when needed; it does not change Apple Account region. Settings-page options and internal experiments are collapsed under Advanced; tap ⓘ for limitations where available. Capability overrides do not guarantee hardware or service support. Selections stage changes until Apply; removing a selection does not undo an already applied preset. Use Backups to restore prior values.
+
+On unsupported iOS 27 devices, Siri AI setup temporarily spoofs an eligible model. iOS 26 retains its original setup flow and ordinary backup only. Face ID and dictation may be unavailable while spoofed. Finish downloading Siri AI models in Settings, then use **After Model Download · Remove Device Spoof** in Restore. After removing the spoof and restarting, Face ID and dictation work again; SiriMode = 2 and AI settings are retained. The ordinary pre-write backup keeps its original timestamp-based name and performs a full restore.
 
 **Field editor** — Search and edit any MobileGestalt key by hand when a preset doesn't cover it.
 
@@ -61,6 +63,7 @@ For Apple Watch support, we recommend signing with [WatchBridge](https://github.
 ## Credits
 
 - [Nugget](https://github.com/leminlimez/Nugget) — presets and iPadOS support
+- [MGKeys](https://github.com/PoomSmart/MGKeys), [Erosion](https://github.com/jailbreakdotparty/Erosion), [mond](https://github.com/rooootdev/mond), [GestaltX](https://github.com/huamidev/GestaltX) — capability mapping and preset references; see [catalog sources](docs/PRESET_SOURCES.md)
 - [FilzaSlop](https://github.com/0xjohnnydev/FilzaSlop), [worse_query](https://github.com/forcequitOS/worse_query), [0xJohnny](https://x.com/0xjohnny) — file access research
 - [neospring](https://github.com/rooootdev/neospring) — respring implementation
 
